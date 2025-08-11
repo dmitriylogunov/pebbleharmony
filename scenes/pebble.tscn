@@ -1,6 +1,9 @@
-[gd_scene format=3 uid="uid://bhur650scc1jc"]
+[gd_scene load_steps=2 format=3 uid="uid://bhur650scc1jc"]
+
+[ext_resource type="Script" uid="uid://x7e3th28gvg" path="res://scripts/pebble.gd" id="1_421eo"]
 
 [node name="Pebble" type="Node2D"]
+script = ExtResource("1_421eo")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
