@@ -1,0 +1,79 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+*.tmp
+
+# Godot-specific ignores
+.import/
+export.cfg
+export_presets.cfg
+
+# Imported translations (automatically generated from CSV files)
+*.translation
+
+# Mono-specific ignores
+.mono/
+data_*/
+mono_crash.*.json
+
+# System/IDE-specific ignores
+.directory
+.DS_Store
+*~
+*.swp
+*.swo
+*.swn
+.vscode/
+.idea/
+*.iml
+
+# Commonly ignored files
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Build artifacts
+build/
+dist/
+*.exe
+*.pck
+*.zip
+*.app
+*.dmg
+*.apk
+*.aab
+*.ipa
+
+# Debug files
+*.pdb
+
+# Temporary files
+*.temp
+.tmp/
+.temp/
+
+# Backup files
+*.backup
+*.bak
+*.orig
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS specific
+.AppleDouble
+.LSOverride
+._*
+
+# Linux specific
+.Trash-*
+.nfs*
