@@ -46,6 +46,8 @@ func _input(event):
 		handle_drag(event)
 	elif event is InputEventMouseButton:
 		handle_mouse_click(event)
+	elif event is InputEventKey:
+		handle_keyboard(event)
 
 func handle_touch(event: InputEventScreenTouch):
 	if event.pressed:
@@ -96,6 +98,22 @@ func handle_mouse_click(event: InputEventMouseButton):
 				move_puyo_left()
 			else:
 				move_puyo_right()
+
+func handle_keyboard(event: InputEventKey):
+	if not event.pressed or current_puyo.size() == 0:
+		return
+	
+	match event.keycode:
+		KEY_LEFT, KEY_A:
+			move_puyo_left()
+		KEY_RIGHT, KEY_D:
+			move_puyo_right()
+		KEY_UP, KEY_W:
+			rotate_puyo_cw()
+		KEY_DOWN, KEY_S:
+			rotate_puyo_ccw()
+		KEY_SPACE, KEY_Q:
+			drop_puyo()
 
 func spawn_puyo():
 	if game_over:
