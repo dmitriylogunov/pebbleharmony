@@ -3,6 +3,8 @@ extends Node
 const GRID_WIDTH = 6
 const GRID_HEIGHT = 12
 const CELL_SIZE = 64
+const PEBBLE_TEXTURE_SIZE = 144
+const PEBBLE_SCALE = float(CELL_SIZE) / float(PEBBLE_TEXTURE_SIZE)
 
 const UI_MARGIN = 50
 const SCREEN_WIDTH = 720
