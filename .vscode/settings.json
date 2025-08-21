@@ -1,0 +1,73 @@
+{
+  // Preserve existing Godot editor path
+  "godotTools.editorPath.godot4": "c:\\Program Files\\Godot\\Godot_v4.4.1-stable_mono_win64.exe",
+  
+  // Hide Godot-specific files and metadata from VS Code explorer
+  "files.exclude": {
+    // Godot project files
+    ".godot/": true,
+    "*.tmp": true,
+    
+    // Godot import files
+    "*.import": true,
+    ".import/": true,
+    
+    // Godot resource UIDs
+    "*.uid": true,
+    "*.gd.uid": true,
+    "*.tscn.uid": true,
+    "*.tres.uid": true,
+    
+    // Godot resource metadata
+    "*.remap": true,
+    "*.md5": true,
+    "*.stex": true,
+    "*.ctex": true,
+    "*.res": true,
+    
+    // Build artifacts
+    "export/": true,
+    "export_presets.cfg": true,
+    ".mono/": true,
+    "mono_crash.*.json": true,
+    
+    // OS-specific files
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.directory": true
+  },
+  
+  // Also hide from search results
+  "search.exclude": {
+    ".godot/": true,
+    "*.import": true,
+    ".import/": true,
+    "*.uid": true,
+    "*.remap": true,
+    "export/": true,
+    ".mono/": true
+  },
+  
+  // File associations for better syntax highlighting
+  "files.associations": {
+    "*.gd": "gdscript",
+    "*.tscn": "ini",
+    "*.tres": "ini",
+    "*.godot": "ini",
+    "project.godot": "ini"
+  },
+  
+  // Recommended settings for Godot development
+  "editor.insertSpaces": false,
+  "editor.detectIndentation": true,
+  "editor.trimAutoWhitespace": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  
+  // GDScript specific formatting
+  "[gdscript]": {
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4,
+    "editor.indentSize": 4
+  }
+}

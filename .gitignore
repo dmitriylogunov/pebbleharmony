@@ -23,7 +23,7 @@ mono_crash.*.json
 *.swp
 *.swo
 *.swn
-.vscode/
+# .vscode/  # Commented out to allow VS Code settings in repo
 .idea/
 *.iml
 
