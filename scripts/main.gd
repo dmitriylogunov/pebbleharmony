@@ -291,7 +291,7 @@ func process_chain_reaction():
 		process_chain_reaction()
 	else:
 		# No more matches, check game over
-		if game_field.check_game_over():
+		if game_field.is_game_over():
 			game_over = true
 			print("Game Over! Final Score: ", score)
 		else:
