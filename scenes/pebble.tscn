@@ -8,6 +8,14 @@ script = ExtResource("1_421eo")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.444, 0.444)
 
+[node name="DebugMarker" type="ColorRect" parent="."]
+visible = false
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+color = Color(1, 0, 0, 1)
+
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]

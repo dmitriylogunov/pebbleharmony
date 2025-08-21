@@ -1,5 +1,7 @@
 extends Node
 
+const DEBUG_MODE = true
+
 const GRID_WIDTH = 6
 const GRID_HEIGHT = 12
 const CELL_SIZE = 64
