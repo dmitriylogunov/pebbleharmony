@@ -1,3 +1,21 @@
+# GameConstants.gd - Central configuration and constants for PebbleHarmony
+#
+# Purpose: Defines all game-wide constants including grid dimensions, physics values,
+#          scoring rules, and pebble types. Acts as a single source of truth for
+#          game configuration that all other modules reference.
+#
+# Key Constants:
+# - Grid dimensions and layout (GRID_WIDTH, GRID_HEIGHT, CELL_SIZE)
+# - UI layout and screen margins
+# - Physics parameters (fall speeds, movement speeds)
+# - Game rules (match count, scoring)
+# - Pebble types and colors
+#
+# Utility Functions:
+# - get_grid_position(): Converts world coordinates to grid indices
+# - get_world_position(): Converts grid indices to world coordinates
+# - is_valid_grid_position(): Validates if grid position is in bounds
+
 extends Node
 
 const DEBUG_MODE = true
